@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SupermarketDBModelStoreContainer" CdmEntityContainer="SupermarketDBEntities">
+    <EntitySetMapping Name="BonuriDeCasa">
+      <EntityTypeMapping TypeName="SupermarketDBModel.BonuriDeCasa">
+        <MappingFragment StoreEntitySet="BonuriDeCasa">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DataEliberarii" ColumnName="DataEliberarii" />
+          <ScalarProperty Name="CasierId" ColumnName="CasierId" />
+          <ScalarProperty Name="SumaIncasata" ColumnName="SumaIncasata" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BonuriDeCasa_Produse">
+      <EntityTypeMapping TypeName="SupermarketDBModel.BonuriDeCasa_Produse">
+        <MappingFragment StoreEntitySet="BonuriDeCasa_Produse">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BonId" ColumnName="BonId" />
+          <ScalarProperty Name="ProdusId" ColumnName="ProdusId" />
+          <ScalarProperty Name="Cantitate" ColumnName="Cantitate" />
+          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categorii">
+      <EntityTypeMapping TypeName="SupermarketDBModel.Categorii">
+        <MappingFragment StoreEntitySet="Categorii">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeCategorie" ColumnName="NumeCategorie" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Oferte">
+      <EntityTypeMapping TypeName="SupermarketDBModel.Oferte">
+        <MappingFragment StoreEntitySet="Oferte">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotivOferta" ColumnName="MotivOferta" />
+          <ScalarProperty Name="ProdusId" ColumnName="ProdusId" />
+          <ScalarProperty Name="ProcentReducere" ColumnName="ProcentReducere" />
+          <ScalarProperty Name="DataDeLa" ColumnName="DataDeLa" />
+          <ScalarProperty Name="DataPanaLa" ColumnName="DataPanaLa" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producatori">
+      <EntityTypeMapping TypeName="SupermarketDBModel.Producatori">
+        <MappingFragment StoreEntitySet="Producatori">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeProducator" ColumnName="NumeProducator" />
+          <ScalarProperty Name="TaraOrigine" ColumnName="TaraOrigine" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Produse">
+      <EntityTypeMapping TypeName="SupermarketDBModel.Produse">
+        <MappingFragment StoreEntitySet="Produse">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeProdus" ColumnName="NumeProdus" />
+          <ScalarProperty Name="CodDeBare" ColumnName="CodDeBare" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="ProducatorId" ColumnName="ProducatorId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stocuri">
+      <EntityTypeMapping TypeName="SupermarketDBModel.Stocuri">
+        <MappingFragment StoreEntitySet="Stocuri">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProdusId" ColumnName="ProdusId" />
+          <ScalarProperty Name="Cantitate" ColumnName="Cantitate" />
+          <ScalarProperty Name="UnitateDeMasura" ColumnName="UnitateDeMasura" />
+          <ScalarProperty Name="DataAprovizionarii" ColumnName="DataAprovizionarii" />
+          <ScalarProperty Name="DataExpirarii" ColumnName="DataExpirarii" />
+          <ScalarProperty Name="PretAchizitie" ColumnName="PretAchizitie" />
+          <ScalarProperty Name="PretDeVanzare" ColumnName="PretDeVanzare" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilizatori">
+      <EntityTypeMapping TypeName="SupermarketDBModel.Utilizatori">
+        <MappingFragment StoreEntitySet="Utilizatori">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeUtilizator" ColumnName="NumeUtilizator" />
+          <ScalarProperty Name="Parola" ColumnName="Parola" />
+          <ScalarProperty Name="TipUtilizator" ColumnName="TipUtilizator" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

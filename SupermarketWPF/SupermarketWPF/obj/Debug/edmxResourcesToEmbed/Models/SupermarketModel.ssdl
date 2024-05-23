@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SupermarketDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BonuriDeCasa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataEliberarii" Type="datetime" Nullable="false" />
+    <Property Name="CasierId" Type="int" />
+    <Property Name="SumaIncasata" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="BonuriDeCasa_Produse">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BonId" Type="int" />
+    <Property Name="ProdusId" Type="int" />
+    <Property Name="Cantitate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Subtotal" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Categorii">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeCategorie" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Oferte">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MotivOferta" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ProdusId" Type="int" />
+    <Property Name="ProcentReducere" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="DataDeLa" Type="date" Nullable="false" />
+    <Property Name="DataPanaLa" Type="date" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Producatori">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeProducator" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TaraOrigine" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Produse">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeProdus" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CodDeBare" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Categoria" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProducatorId" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Stocuri">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProdusId" Type="int" />
+    <Property Name="Cantitate" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="UnitateDeMasura" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DataAprovizionarii" Type="date" Nullable="false" />
+    <Property Name="DataExpirarii" Type="date" />
+    <Property Name="PretAchizitie" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="PretDeVanzare" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Utilizatori">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeUtilizator" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Parola" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TipUtilizator" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <Association Name="FK__BonuriDeC__BonId__48CFD27E">
+    <End Role="BonuriDeCasa" Type="Self.BonuriDeCasa" Multiplicity="0..1" />
+    <End Role="BonuriDeCasa_Produse" Type="Self.BonuriDeCasa_Produse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BonuriDeCasa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BonuriDeCasa_Produse">
+        <PropertyRef Name="BonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BonuriDeC__Casie__45F365D3">
+    <End Role="Utilizatori" Type="Self.Utilizatori" Multiplicity="0..1" />
+    <End Role="BonuriDeCasa" Type="Self.BonuriDeCasa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizatori">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BonuriDeCasa">
+        <PropertyRef Name="CasierId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BonuriDeC__Produ__49C3F6B7">
+    <End Role="Produse" Type="Self.Produse" Multiplicity="0..1" />
+    <End Role="BonuriDeCasa_Produse" Type="Self.BonuriDeCasa_Produse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Produse">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BonuriDeCasa_Produse">
+        <PropertyRef Name="ProdusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Oferte__ProdusId__4CA06362">
+    <End Role="Produse" Type="Self.Produse" Multiplicity="0..1" />
+    <End Role="Oferte" Type="Self.Oferte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Produse">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Oferte">
+        <PropertyRef Name="ProdusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Produse__Produca__3E52440B">
+    <End Role="Producatori" Type="Self.Producatori" Multiplicity="0..1" />
+    <End Role="Produse" Type="Self.Produse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producatori">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Produse">
+        <PropertyRef Name="ProducatorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Stocuri__ProdusI__412EB0B6">
+    <End Role="Produse" Type="Self.Produse" Multiplicity="0..1" />
+    <End Role="Stocuri" Type="Self.Stocuri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Produse">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Stocuri">
+        <PropertyRef Name="ProdusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SupermarketDBModelStoreContainer">
+    <EntitySet Name="BonuriDeCasa" EntityType="Self.BonuriDeCasa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BonuriDeCasa_Produse" EntityType="Self.BonuriDeCasa_Produse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categorii" EntityType="Self.Categorii" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Oferte" EntityType="Self.Oferte" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Producatori" EntityType="Self.Producatori" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Produse" EntityType="Self.Produse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stocuri" EntityType="Self.Stocuri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Utilizatori" EntityType="Self.Utilizatori" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__BonuriDeC__BonId__48CFD27E" Association="Self.FK__BonuriDeC__BonId__48CFD27E">
+      <End Role="BonuriDeCasa" EntitySet="BonuriDeCasa" />
+      <End Role="BonuriDeCasa_Produse" EntitySet="BonuriDeCasa_Produse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BonuriDeC__Casie__45F365D3" Association="Self.FK__BonuriDeC__Casie__45F365D3">
+      <End Role="Utilizatori" EntitySet="Utilizatori" />
+      <End Role="BonuriDeCasa" EntitySet="BonuriDeCasa" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BonuriDeC__Produ__49C3F6B7" Association="Self.FK__BonuriDeC__Produ__49C3F6B7">
+      <End Role="Produse" EntitySet="Produse" />
+      <End Role="BonuriDeCasa_Produse" EntitySet="BonuriDeCasa_Produse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Oferte__ProdusId__4CA06362" Association="Self.FK__Oferte__ProdusId__4CA06362">
+      <End Role="Produse" EntitySet="Produse" />
+      <End Role="Oferte" EntitySet="Oferte" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Produse__Produca__3E52440B" Association="Self.FK__Produse__Produca__3E52440B">
+      <End Role="Producatori" EntitySet="Producatori" />
+      <End Role="Produse" EntitySet="Produse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Stocuri__ProdusI__412EB0B6" Association="Self.FK__Stocuri__ProdusI__412EB0B6">
+      <End Role="Produse" EntitySet="Produse" />
+      <End Role="Stocuri" EntitySet="Stocuri" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

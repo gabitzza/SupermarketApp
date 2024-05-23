@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a9542d0d8bf04439abafdb25df6a33e4" Name="Diagram1">
+        <EntityTypeShape EntityType="SupermarketDBModel.BonuriDeCasa" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketDBModel.BonuriDeCasa_Produse" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketDBModel.Categorii" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketDBModel.Oferte" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketDBModel.Producatori" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketDBModel.Produse" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketDBModel.Stocuri" Width="1.5" PointX="5.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SupermarketDBModel.Utilizatori" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="SupermarketDBModel.FK__BonuriDeC__BonId__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketDBModel.FK__BonuriDeC__Casie__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketDBModel.FK__BonuriDeC__Produ__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketDBModel.FK__Oferte__ProdusId__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketDBModel.FK__Produse__Produca__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="SupermarketDBModel.FK__Stocuri__ProdusI__412EB0B6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

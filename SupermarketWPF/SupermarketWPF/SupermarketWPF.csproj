@@ -35,8 +35,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,7 +64,63 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Models\BonuriDeCasa.cs">
+      <DependentUpon>SupermarketModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BonuriDeCasa_Produse.cs">
+      <DependentUpon>SupermarketModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Categorii.cs">
+      <DependentUpon>SupermarketModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Oferte.cs">
+      <DependentUpon>SupermarketModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Producatori.cs">
+      <DependentUpon>SupermarketModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Produse.cs">
+      <DependentUpon>SupermarketModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Stocuri.cs">
+      <DependentUpon>SupermarketModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SupermarketModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupermarketModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SupermarketModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupermarketModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SupermarketModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupermarketModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Utilizatori.cs">
+      <DependentUpon>SupermarketModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AdministratorVM.cs" />
+    <Compile Include="ViewModels\CasierVM.cs" />
+    <Compile Include="ViewModels\MainWindowVM.cs" />
+    <Compile Include="ViewModels\ProducatoriVM.cs" />
+    <Compile Include="ViewModels\ProduseVM.cs" />
+    <Compile Include="View\AdministratorView.xaml.cs">
+      <DependentUpon>AdministratorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CasierView.xaml.cs">
+      <DependentUpon>CasierView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProducatorView.xaml.cs">
+      <DependentUpon>ProducatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProduseView.xaml.cs">
+      <DependentUpon>ProduseView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,10 +128,28 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="Helpers\BaseVM.cs" />
+    <Compile Include="Helpers\RelayCommands.cs" />
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\AdministratorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CasierView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProducatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProduseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -86,6 +169,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="Models\SupermarketModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SupermarketModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\SupermarketModel.edmx.diagram">
+      <DependentUpon>SupermarketModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,6 +184,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Converters\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\SupermarketModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SupermarketModel.Context.cs</LastGenOutput>
+      <DependentUpon>SupermarketModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\SupermarketModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SupermarketModel.edmx</DependentUpon>
+      <LastGenOutput>SupermarketModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

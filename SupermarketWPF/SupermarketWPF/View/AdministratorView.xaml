@@ -1,0 +1,21 @@
+﻿<Window x:Class="SupermarketWPF.View.AdministratorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SupermarketWPF.View"
+        mc:Ignorable="d"
+        Title="AdministratorView" Height="450" Width="800">
+    <Grid>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Left" Width="200">
+                <Button Content="Producători" Command="{Binding NavigateCommand}" CommandParameter="Producatori" />
+                <Button Content="Utilizatori" Command="{Binding NavigateCommand}" CommandParameter="Utilizatori" />
+                <Button Content="Categorii" Command="{Binding NavigateCommand}" CommandParameter="Categorii" />
+                <Button Content="Produse" Click="OpenProduseWindow_Click" />
+                <Button Content="Stocuri" Command="{Binding NavigateCommand}" CommandParameter="Stocuri" />
+            </StackPanel>
+            <ContentControl Content="{Binding CurrentView}" />
+        </DockPanel>
+    </Grid>
+</Window>
