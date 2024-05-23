@@ -13,9 +13,8 @@
                 <Button Content="Adaugă" Command="{Binding AddCommand}" Width="100" Margin="5" />
                 <Button Content="Modifică" Command="{Binding UpdateCommand}" Width="100" Margin="5" />
                 <Button Content="Șterge" Command="{Binding DeleteCommand}" Width="100" Margin="5" />
-
-                <ListBox ItemsSource="{Binding Produse}" DisplayMemberPath="NumeProdus" />
             </StackPanel>
+            <TextBox Text="{Binding SelectedProdus.NumeProdus}" IsReadOnly="True" Width="200" Margin="5" />
         </StackPanel>
     </Grid>
 </Window>

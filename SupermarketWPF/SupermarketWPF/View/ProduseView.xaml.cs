@@ -22,7 +22,14 @@ namespace SupermarketWPF.View
         public ProduseView()
         {
             InitializeComponent();
-            DataContext = new ViewModels.ProduseVM();
+            try
+            {
+                DataContext = new ViewModels.ProduseVM();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Eroare la inițializare", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }
