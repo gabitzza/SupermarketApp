@@ -1,83 +1,184 @@
-﻿using SupermarketWPF.Helpers;
-using SupermarketWPF.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
+using SupermarketWPF.Models;
+using SupermarketWPF.Helpers;
 
 namespace SupermarketWPF.ViewModels
 {
-    internal class ProduseVM : BaseVM
+    public class ProduseVM : BaseVM
     {
         private readonly SupermarketDBEntities _context;
-        private Produse _selectedProdus;
+        private int _id;
+        private string _numeProdus;
+        private string _codDeBare;
+        private string _categoria;
+        private int _producatorId;
 
-        public ObservableCollection<Produse> Produse { get; set; }
-        public Produse SelectedProdus
+        public int Id
         {
-            get { return _selectedProdus; }
-            set
-            {
-                _selectedProdus = value;
-                OnPropertyChanged(nameof(SelectedProdus));
-            }
+            get { return _id; }
+            set { _id = value; OnPropertyChanged(nameof(Id)); }
         }
 
-        public ICommand AddCommand { get; }
-        public ICommand UpdateCommand { get; }
-        public ICommand DeleteCommand { get; }
+        public string NumeProdus
+        {
+            get { return _numeProdus; }
+            set { _numeProdus = value; OnPropertyChanged(nameof(NumeProdus)); }
+        }
+
+        public string CodDeBare
+        {
+            get { return _codDeBare; }
+            set { _codDeBare = value; OnPropertyChanged(nameof(CodDeBare)); }
+        }
+
+        public string Categoria
+        {
+            get { return _categoria; }
+            set { _categoria = value; OnPropertyChanged(nameof(Categoria)); }
+        }
+
+        public int ProducatorId
+        {
+            get { return _producatorId; }
+            set { _producatorId = value; OnPropertyChanged(nameof(ProducatorId)); }
+        }
+
+        public ObservableCollection<Produse> ProduseList { get; set; }
+        public ObservableCollection<Producatori> ProducatoriList { get; set; }
+        public ICommand AddProdusCommand { get; }
+        public ICommand UpdateProdusCommand { get; }
+        public ICommand DeleteProdusCommand { get; }
 
         public ProduseVM()
         {
             _context = new SupermarketDBEntities();
-            Produse = new ObservableCollection<Produse>(_context.Produse.Where(p => (bool)p.IsActive).ToList());
-
-            AddCommand = new RelayCommand(AddProdus);
-            UpdateCommand = new RelayCommand(UpdateProdus);
-            DeleteCommand = new RelayCommand(DeleteProdus);
+            ProduseList = new ObservableCollection<Produse>(_context.Produse.Where(p => p.IsActive == true).ToList());
+            ProducatoriList = new ObservableCollection<Producatori>(_context.Producatori.Where(p => p.IsActive == true).ToList());
+            AddProdusCommand = new RelayCommand(AddProdus);
+            UpdateProdusCommand = new RelayCommand(UpdateProdus);
+            DeleteProdusCommand = new RelayCommand(DeleteProdus);
         }
 
-        private void AddProdus(string numeProdus, string codDeBare, string categoria, int? producatorId, bool isActive)
+        private void AddProdus(object obj)
         {
-            var produs = new Produse
+            try
             {
-                NumeProdus = numeProdus,
-                CodDeBare = codDeBare,
-                Categoria = categoria,
-                ProducatorId = producatorId,
-                IsActive = isActive
-            };
-            _context.Produse.Add(produs);
-            _context.SaveChanges();
-            Produse.Add(produs);
+                // Validare câmpuri
+                if (string.IsNullOrWhiteSpace(NumeProdus) || string.IsNullOrWhiteSpace(CodDeBare) || string.IsNullOrWhiteSpace(Categoria) || ProducatorId == 0)
+                {
+                    MessageBox.Show("Toate câmpurile sunt obligatorii.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                // Verificare existență produs cu același nume sau cod de bare
+                if (_context.Produse.Any(p => p.NumeProdus == NumeProdus))
+                {
+                    MessageBox.Show("Există deja un produs cu acest nume.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                if (_context.Produse.Any(p => p.CodDeBare == CodDeBare))
+                {
+                    MessageBox.Show("Există deja un produs cu acest cod de bare.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                var produs = new Produse
+                {
+                    NumeProdus = NumeProdus,
+                    CodDeBare = CodDeBare,
+                    Categoria = Categoria,
+                    ProducatorId = ProducatorId,
+                    IsActive = true
+                };
+
+                _context.Produse.Add(produs);
+                _context.SaveChanges();
+                ProduseList.Add(produs);
+
+                // Resetarea câmpurilor după adăugare
+                NumeProdus = string.Empty;
+                CodDeBare = string.Empty;
+                Categoria = string.Empty;
+                ProducatorId = 0;
+
+                OnPropertyChanged(nameof(NumeProdus));
+                OnPropertyChanged(nameof(CodDeBare));
+                OnPropertyChanged(nameof(Categoria));
+                OnPropertyChanged(nameof(ProducatorId));
+
+                MessageBox.Show("Produs adăugat: " + produs.NumeProdus);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Add Produs Error");
+            }
         }
 
         private void UpdateProdus(object obj)
         {
-            if (SelectedProdus != null)
+            try
             {
+                // Validare câmpuri
+                if (Id == 0 || string.IsNullOrWhiteSpace(NumeProdus) || string.IsNullOrWhiteSpace(CodDeBare) || string.IsNullOrWhiteSpace(Categoria) || ProducatorId == 0)
+                {
+                    MessageBox.Show("Toate câmpurile sunt obligatorii.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                var produs = _context.Produse.FirstOrDefault(p => p.Id == Id && p.IsActive == true);
+                if (produs == null)
+                {
+                    MessageBox.Show($"Produsul cu ID-ul {Id} nu există.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                produs.NumeProdus = NumeProdus;
+                produs.CodDeBare = CodDeBare;
+                produs.Categoria = Categoria;
+                produs.ProducatorId = ProducatorId;
                 _context.SaveChanges();
+
+                MessageBox.Show("Produs actualizat: " + produs.NumeProdus);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Update Produs Error");
             }
         }
 
         private void DeleteProdus(object obj)
         {
-            if (SelectedProdus != null)
+            try
             {
-                SelectedProdus.IsActive = false;
-                _context.SaveChanges();
-                Produse.Remove(SelectedProdus);
-            }
-        }
+                // Validare câmpuri
+                if (Id == 0)
+                {
+                    MessageBox.Show("ID-ul produsului este obligatoriu.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected new virtual void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+                var produs = _context.Produse.FirstOrDefault(p => p.Id == Id && p.IsActive == true);
+                if (produs == null)
+                {
+                    MessageBox.Show($"Produsul cu ID-ul {Id} nu există.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                produs.IsActive = false;
+                _context.SaveChanges();
+                ProduseList.Remove(produs);
+
+                MessageBox.Show("Produs șters: " + produs.NumeProdus);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Delete Produs Error");
+            }
         }
     }
 }

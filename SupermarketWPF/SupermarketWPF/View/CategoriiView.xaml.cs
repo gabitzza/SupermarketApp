@@ -16,14 +16,14 @@ using System.Windows.Shapes;
 namespace SupermarketWPF.View
 {
     /// <summary>
-    /// Interaction logic for ProducatorView.xaml
+    /// Interaction logic for CategoriiView.xaml
     /// </summary>
-    public partial class ProducatorView : Window
+    public partial class CategoriiView : Window
     {
-        public ProducatorView()
+        public CategoriiView()
         {
             InitializeComponent();
-            DataContext = new ProducatoriVM();
+            DataContext = new CategoriiVM();
         }
     }
 }

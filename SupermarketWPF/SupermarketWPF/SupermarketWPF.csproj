@@ -45,8 +45,10 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -106,6 +108,7 @@
     </Compile>
     <Compile Include="ViewModels\AdministratorVM.cs" />
     <Compile Include="ViewModels\CasierVM.cs" />
+    <Compile Include="ViewModels\CategoriiVM.cs" />
     <Compile Include="ViewModels\MainWindowVM.cs" />
     <Compile Include="ViewModels\ProducatoriVM.cs" />
     <Compile Include="ViewModels\ProduseVM.cs" />
@@ -116,6 +119,9 @@
     <Compile Include="View\CasierView.xaml.cs">
       <DependentUpon>CasierView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\CategoriiView.xaml.cs">
+      <DependentUpon>CategoriiView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ProducatorView.xaml.cs">
       <DependentUpon>ProducatorView.xaml</DependentUpon>
     </Compile>
@@ -125,6 +131,10 @@
     <Compile Include="View\StocuriView.xaml.cs">
       <DependentUpon>StocuriView.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\CategoriiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

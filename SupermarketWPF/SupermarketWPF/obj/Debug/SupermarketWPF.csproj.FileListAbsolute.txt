@@ -29,3 +29,5 @@ C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\Su
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\bin\Debug\SupermarketWPF.pdb
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\StocuriView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\StocuriView.g.cs
+C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\CategoriiView.baml
+C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\CategoriiView.g.cs

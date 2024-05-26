@@ -1,57 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using SupermarketWPF.Helpers;
 using SupermarketWPF.View;
 
 namespace SupermarketWPF.ViewModels
 {
-    internal class AdministratorVM:BaseVM
+    public class AdministratorVM : BaseVM
     {
-        private object _currentView;
-        public object CurrentView
-        {
-            get { return _currentView; }
-            set
-            {
-                _currentView = value;
-                OnPropertyChanged(nameof(CurrentView));
-            }
-        }
-
-        public ICommand NavigateCommand { get; }
+        public ICommand OpenProducatoriViewCommand { get; }
+        public ICommand OpenUtilizatoriViewCommand { get; }
+        public ICommand OpenCategoriiViewCommand { get; }
+        public ICommand OpenProduseViewCommand { get; }
+        public ICommand OpenStocuriViewCommand { get; }
 
         public AdministratorVM()
         {
-            NavigateCommand = new RelayCommand(Navigate);
+            OpenProducatoriViewCommand = new RelayCommand(OpenProducatoriView);
+            //OpenUtilizatoriViewCommand = new RelayCommand(OpenUtilizatoriView);
+            OpenCategoriiViewCommand = new RelayCommand(OpenCategoriiView);
+            OpenProduseViewCommand = new RelayCommand(OpenProduseView);
+            OpenStocuriViewCommand = new RelayCommand(OpenStocuriView);
         }
 
-        private void Navigate(object parameter)
+        private void OpenProducatoriView(object obj)
         {
-            switch (parameter as string)
-            {
-                case "Producatori":
-                    CurrentView = new ProducatorView();
-                    break;
+            ProducatorView producatoriView = new ProducatorView();
+            producatoriView.Show();
+        }
 
-                //case "Utilizatori":
-                //    CurrentView = new UtilizatoriView();
-                //    break;
-                //case "Categorii":
-                //    CurrentView = new CategoriiView();
-                //    break;
-                case "Produse":
-                    CurrentView = new ProduseView();
-                    break;
-                case "Stocuri":
-                    CurrentView = new StocuriView();
-                    break;
-                default:
-                    break;
-            }
+        //private void OpenUtilizatoriView(object obj)
+        //{
+        //    UtilizatoriView utilizatoriView = new UtilizatoriView();
+        //    utilizatoriView.Show();
+        //}
+
+        private void OpenCategoriiView(object obj)
+        {
+            CategoriiView categoriiView = new CategoriiView();
+            categoriiView.Show();
+        }
+
+        private void OpenProduseView(object obj)
+        {
+            ProduseView produseView = new ProduseView();
+            produseView.Show();
+        }
+
+        private void OpenStocuriView(object obj)
+        {
+            StocuriView stocuriView = new StocuriView();
+            stocuriView.Show();
         }
     }
 }
