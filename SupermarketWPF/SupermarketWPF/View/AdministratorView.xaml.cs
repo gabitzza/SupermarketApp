@@ -30,5 +30,11 @@ namespace SupermarketWPF.View
             ProduseView produseWindow = new ProduseView();
             produseWindow.Show();
         }
+
+        private void OpenStocuriWindow_Click(object sender, RoutedEventArgs e)
+        {
+            StocuriView stocuriWindow = new StocuriView();
+            stocuriWindow.Show();
+        }
     }
 }

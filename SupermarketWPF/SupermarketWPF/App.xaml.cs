@@ -16,7 +16,7 @@ namespace SupermarketWPF
         protected override void OnStartup(StartupEventArgs e)
         {
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
-            DispatcherUnhandledException += App_DispatcherUnhandledException;
+         //   DispatcherUnhandledException += App_DispatcherUnhandledException;
             base.OnStartup(e);
         }
 
@@ -28,10 +28,8 @@ namespace SupermarketWPF
 
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
-            if (e.ExceptionObject is Exception ex)
-            {
-                MessageBox.Show($"An unhandled domain exception occurred: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+            Exception ex = (Exception)e.ExceptionObject;
+            MessageBox.Show(ex.Message, "Unhandled Exception");
         }
     }
 }

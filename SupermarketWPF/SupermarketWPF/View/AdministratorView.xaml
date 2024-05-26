@@ -8,12 +8,12 @@
         Title="AdministratorView" Height="450" Width="800">
     <Grid>
         <DockPanel>
-            <StackPanel DockPanel.Dock="Left" Width="200">
+            <StackPanel DockPanel.Dock="Left" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <Button Content="Producători" Command="{Binding NavigateCommand}" CommandParameter="Producatori" />
                 <Button Content="Utilizatori" Command="{Binding NavigateCommand}" CommandParameter="Utilizatori" />
                 <Button Content="Categorii" Command="{Binding NavigateCommand}" CommandParameter="Categorii" />
                 <Button Content="Produse" Click="OpenProduseWindow_Click" />
-                <Button Content="Stocuri" Command="{Binding NavigateCommand}" CommandParameter="Stocuri" />
+                <Button Content="Stocuri" Click="OpenStocuriWindow_Click" />
             </StackPanel>
             <ContentControl Content="{Binding CurrentView}" />
         </DockPanel>

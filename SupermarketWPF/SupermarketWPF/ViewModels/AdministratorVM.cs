@@ -46,9 +46,9 @@ namespace SupermarketWPF.ViewModels
                 case "Produse":
                     CurrentView = new ProduseView();
                     break;
-                //case "Stocuri":
-                //    CurrentView = new StocuriView();
-                //    break;
+                case "Stocuri":
+                    CurrentView = new StocuriView();
+                    break;
                 default:
                     break;
             }

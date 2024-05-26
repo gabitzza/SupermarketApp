@@ -1,0 +1,50 @@
+﻿<Window x:Class="SupermarketWPF.View.StocuriView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StocuriView" Height="600" Width="800">
+    <Window.Resources>
+        <Style x:Key="PlaceholderTextBoxStyle" TargetType="TextBox">
+            <Style.Resources>
+                <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+                    <VisualBrush.Visual>
+                        <TextBlock 
+                            Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type TextBox}}, Path=Tag}"
+                            Foreground="LightGray"
+                            Margin="5,0,0,0"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Style.Resources>
+            <Style.Triggers>
+                <Trigger Property="Text" Value="">
+                    <Setter Property="Background" Value="{StaticResource CueBannerBrush}"/>
+                </Trigger>
+                <Trigger Property="IsFocused" Value="True">
+                    <Setter Property="Background" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="txtProdusId" Width="200" Margin="5" Tag="Produs ID" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding ProdusId, Mode=TwoWay}"/>
+            <TextBox x:Name="txtCantitate" Width="200" Margin="5" Tag="Cantitate" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding Cantitate, Mode=TwoWay}"/>
+            <TextBox x:Name="txtUnitateDeMasura" Width="200" Margin="5" Tag="Unitate de Măsură" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding UnitateDeMasura, Mode=TwoWay}"/>
+            <DatePicker x:Name="dpDataAprovizionarii" Width="200" Margin="5" SelectedDate="{Binding DataAprovizionarii, Mode=TwoWay}"/>
+            <DatePicker x:Name="dpDataExpirarii" Width="200" Margin="5" SelectedDate="{Binding DataExpirarii, Mode=TwoWay}"/>
+            <TextBox x:Name="txtPretAchizitie" Width="200" Margin="5" Tag="Preț de Achiziție" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding PretAchizitie, Mode=TwoWay}"/>
+            <TextBox x:Name="txtPretDeVanzare" Width="200" Margin="5" Tag="Preț de Vânzare" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding PretDeVanzare, Mode=TwoWay}" IsReadOnly="True"/>
+            <Button Content="Adaugă Stoc" Command="{Binding AddStocCommand}" Width="200" Margin="5"/>
+        </StackPanel>
+        <DataGrid ItemsSource="{Binding StocuriList}" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10,248,10,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Produs ID" Binding="{Binding ProdusId}"/>
+                <DataGridTextColumn Header="Cantitate" Binding="{Binding Cantitate}"/>
+                <DataGridTextColumn Header="Unitate de Măsură" Binding="{Binding UnitateDeMasura}"/>
+                <DataGridTextColumn Header="Data Aprovizionării" Binding="{Binding DataAprovizionarii, StringFormat=d}"/>
+                <DataGridTextColumn Header="Data Expirării" Binding="{Binding DataExpirarii, StringFormat=d}"/>
+                <DataGridTextColumn Header="Preț de Achiziție" Binding="{Binding PretAchizitie}"/>
+                <DataGridTextColumn Header="Preț de Vânzare" Binding="{Binding PretDeVanzare}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
