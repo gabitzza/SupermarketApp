@@ -24,5 +24,10 @@ namespace SupermarketWPF.View
             InitializeComponent();
             DataContext = new ViewModels.StocuriVM();
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
