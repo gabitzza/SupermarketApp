@@ -16,7 +16,7 @@ namespace SupermarketWPF.ViewModels
         private string _codDeBare;
         private string _categoria;
         private int _producatorId;
-
+        private Produse _selectedProdus;
         public int Id
         {
             get { return _id; }
@@ -46,9 +46,14 @@ namespace SupermarketWPF.ViewModels
             get { return _producatorId; }
             set { _producatorId = value; OnPropertyChanged(nameof(ProducatorId)); }
         }
-
+        public Produse SelectedProdus
+        {
+            get { return _selectedProdus; }
+            set { _selectedProdus = value; OnPropertyChanged(nameof(SelectedProdus)); }
+        }
         public ObservableCollection<Produse> ProduseList { get; set; }
         public ObservableCollection<Producatori> ProducatoriList { get; set; }
+        public ObservableCollection<Categorii> CategoriiList { get; set; }
         public ICommand AddProdusCommand { get; }
         public ICommand UpdateProdusCommand { get; }
         public ICommand DeleteProdusCommand { get; }
@@ -58,6 +63,7 @@ namespace SupermarketWPF.ViewModels
             _context = new SupermarketDBEntities();
             ProduseList = new ObservableCollection<Produse>(_context.Produse.Where(p => p.IsActive == true).ToList());
             ProducatoriList = new ObservableCollection<Producatori>(_context.Producatori.Where(p => p.IsActive == true).ToList());
+            CategoriiList = new ObservableCollection<Categorii>(_context.Categorii.ToList());
             AddProdusCommand = new RelayCommand(AddProdus);
             UpdateProdusCommand = new RelayCommand(UpdateProdus);
             DeleteProdusCommand = new RelayCommand(DeleteProdus);
@@ -155,25 +161,22 @@ namespace SupermarketWPF.ViewModels
         {
             try
             {
-                // Validare câmpuri
-                if (Id == 0)
+                if (SelectedProdus == null)
                 {
-                    MessageBox.Show("ID-ul produsului este obligatoriu.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Selectați un produs pentru a-l șterge.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
-                var produs = _context.Produse.FirstOrDefault(p => p.Id == Id && p.IsActive == true);
-                if (produs == null)
-                {
-                    MessageBox.Show($"Produsul cu ID-ul {Id} nu există.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
+                var produsDeSters = SelectedProdus;
 
-                produs.IsActive = false;
+                produsDeSters.IsActive = false;
                 _context.SaveChanges();
-                ProduseList.Remove(produs);
+ 
+                ProduseList.Remove(produsDeSters);
+                SelectedProdus = null;
+                OnPropertyChanged(nameof(SelectedProdus));
 
-                MessageBox.Show("Produs șters: " + produs.NumeProdus);
+                MessageBox.Show("Produs șters: " + produsDeSters.NumeProdus);
             }
             catch (Exception ex)
             {
@@ -182,3 +185,4 @@ namespace SupermarketWPF.ViewModels
         }
     }
 }
+

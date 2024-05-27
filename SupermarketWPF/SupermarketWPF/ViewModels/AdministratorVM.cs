@@ -15,7 +15,7 @@ namespace SupermarketWPF.ViewModels
         public AdministratorVM()
         {
             OpenProducatoriViewCommand = new RelayCommand(OpenProducatoriView);
-            //OpenUtilizatoriViewCommand = new RelayCommand(OpenUtilizatoriView);
+            OpenUtilizatoriViewCommand = new RelayCommand(OpenUtilizatoriView);
             OpenCategoriiViewCommand = new RelayCommand(OpenCategoriiView);
             OpenProduseViewCommand = new RelayCommand(OpenProduseView);
             OpenStocuriViewCommand = new RelayCommand(OpenStocuriView);
@@ -27,11 +27,11 @@ namespace SupermarketWPF.ViewModels
             producatoriView.Show();
         }
 
-        //private void OpenUtilizatoriView(object obj)
-        //{
-        //    UtilizatoriView utilizatoriView = new UtilizatoriView();
-        //    utilizatoriView.Show();
-        //}
+        private void OpenUtilizatoriView(object obj)
+        {
+            UtilizatoriView utilizatoriView = new UtilizatoriView();
+            utilizatoriView.Show();
+        }
 
         private void OpenCategoriiView(object obj)
         {

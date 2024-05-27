@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\App.xaml
-71878979839
+10751051561
 21167815799
-32928430173
+37-1991789166
 21-2028245162
-View\CategoriiView.xaml;View\MainWindow.xaml;View\AdministratorView.xaml;View\CasierView.xaml;View\ProducatorView.xaml;View\ProduseView.xaml;View\StocuriView.xaml;
+View\CategorieValoriView.xaml;View\CategoriiView.xaml;View\MainWindow.xaml;View\AdministratorView.xaml;View\CasierView.xaml;View\ProducatorView.xaml;View\ProduseByProducatorView.xaml;View\ProduseView.xaml;View\StocuriView.xaml;View\UtilizatoriView.xaml;
 
-True
+False
 

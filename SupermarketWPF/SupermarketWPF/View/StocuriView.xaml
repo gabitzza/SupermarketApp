@@ -1,5 +1,5 @@
 ﻿<Window x:Class="SupermarketWPF.View.StocuriView"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="StocuriView" Height="450" Width="800">
     <Window.Resources>
@@ -32,19 +32,19 @@
             <DatePicker x:Name="dpDataAprovizionarii" Width="200" Margin="5" SelectedDate="{Binding DataAprovizionarii, Mode=TwoWay}"/>
             <DatePicker x:Name="dpDataExpirarii" Width="200" Margin="5" SelectedDate="{Binding DataExpirarii, Mode=TwoWay}"/>
             <TextBox x:Name="txtPretAchizitie" Width="200" Margin="5" Tag="Preț de Achiziție" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding PretAchizitie, Mode=TwoWay}"/>
-            <TextBox x:Name="txtPretDeVanzare" Width="200" Margin="5" Tag="Preț de Vânzare" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding PretDeVanzare, Mode=TwoWay}"/>
             <Button Content="Adaugă Stoc" Command="{Binding AddStocCommand}" Width="200" Margin="5"/>
-            <Button Content="Actualizează Preț de Vânzare" Command="{Binding UpdatePretDeVanzareCommand}" Width="200" Margin="5"/>
+            <Button Content="Șterge Stoc" Command="{Binding DeleteStocCommand}" Width="200" Margin="5"/>
         </StackPanel>
-        <DataGrid ItemsSource="{Binding StocuriList}" AutoGenerateColumns="False" Width="750" Margin="25,297,25,10" SelectionChanged="DataGrid_SelectionChanged">
+        <DataGrid ItemsSource="{Binding StocuriList}" AutoGenerateColumns="False" Width="750" Margin="25,251,25,10" SelectedItem="{Binding SelectedStoc, Mode=TwoWay}">
             <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Produs ID" Binding="{Binding ProdusId}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Cantitate" Binding="{Binding Cantitate}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Unitate de Măsură" Binding="{Binding UnitateDeMasura}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Data Aprovizionării" Binding="{Binding DataAprovizionarii}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Data Expirării" Binding="{Binding DataExpirarii}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Preț de Achiziție" Binding="{Binding PretAchizitie}" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Preț de Vânzare" Binding="{Binding PretDeVanzare}"/>
+                <DataGridTextColumn Header="Preț de Vânzare" Binding="{Binding PretDeVanzare}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

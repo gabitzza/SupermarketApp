@@ -1,45 +1,16 @@
 ﻿<Window x:Class="SupermarketWPF.View.CategoriiView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="CategoriiView" Height="450" Width="800">
-    <Window.Resources>
-        <Style x:Key="PlaceholderTextBoxStyle" TargetType="TextBox">
-            <Style.Resources>
-                <VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
-                    <VisualBrush.Visual>
-                        <TextBlock 
-                            Text="{Binding RelativeSource={RelativeSource AncestorType={x:Type TextBox}}, Path=Tag}"
-                            Foreground="LightGray"
-                            Margin="5,0,0,0"/>
-                    </VisualBrush.Visual>
-                </VisualBrush>
-            </Style.Resources>
-            <Style.Triggers>
-                <Trigger Property="Text" Value="">
-                    <Setter Property="Background">
-                        <Setter.Value>
-                            <VisualBrush AlignmentX="Left" AlignmentY="Center" Stretch="None">
-                                <VisualBrush.Visual>
-                                    <TextBlock Text="{Binding Tag, RelativeSource={RelativeSource AncestorType={x:Type TextBox}}}" Foreground="LightGray" Margin="5,0,0,0"/>
-                                </VisualBrush.Visual>
-                            </VisualBrush>
-                        </Setter.Value>
-                    </Setter>
-                </Trigger>
-                <Trigger Property="IsFocused" Value="True">
-                    <Setter Property="Background" Value="White"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Resources>
+        Title="Categorii" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <TextBox x:Name="txtNumeCategorie" Width="200" Margin="5" Tag="Nume Categorie" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding NumeCategorie, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox x:Name="txtNumeCategorie" Width="200" Margin="5" Tag="Nume Categorie" Text="{Binding NumeCategorie, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <Button Content="Adaugă Categorie" Command="{Binding AddCategorieCommand}" Width="200" Margin="5"/>
             <Button Content="Actualizează Categorie" Command="{Binding UpdateCategorieCommand}" Width="200" Margin="5"/>
             <Button Content="Șterge Categorie" Command="{Binding DeleteCategorieCommand}" Width="200" Margin="5"/>
+            <Button Content="Vizualizează Valoare pe Categorie" Command="{Binding ViewCategorieValoareCommand}" Width="200" Margin="5"/>
         </StackPanel>
-        <DataGrid ItemsSource="{Binding CategoriiList}" AutoGenerateColumns="False" Width="750" Margin="25,136,25,10">
+        <DataGrid ItemsSource="{Binding CategoriiList}" AutoGenerateColumns="False" Width="750" Margin="25,217,25,10" SelectedItem="{Binding SelectedCategorie, Mode=TwoWay}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Nume Categorie" Binding="{Binding NumeCategorie}" IsReadOnly="True"/>

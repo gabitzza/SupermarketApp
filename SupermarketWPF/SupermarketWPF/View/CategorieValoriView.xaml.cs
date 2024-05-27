@@ -1,10 +1,10 @@
-﻿using SupermarketWPF.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using SupermarketWPF.View;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace SupermarketWPF.View
 {
     /// <summary>
-    /// Interaction logic for AdministratorView.xaml
+    /// Interaction logic for CategorieValoriView.xaml
     /// </summary>
-    public partial class AdministratorView : Window
+    public partial class CategorieValoriView : Window
     {
-        public AdministratorView()
+        public CategorieValoriView()
         {
             InitializeComponent();
-            DataContext = new ViewModels.AdministratorVM();
-
         }
     }
 }

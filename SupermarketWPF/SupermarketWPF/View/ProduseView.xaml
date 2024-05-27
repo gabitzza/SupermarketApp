@@ -36,13 +36,13 @@
         <StackPanel>
             <TextBox x:Name="txtNumeProdus" Width="200" Margin="5" Tag="Nume Produs" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding NumeProdus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBox x:Name="txtCodDeBare" Width="200" Margin="5" Tag="Cod De Bare" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding CodDeBare, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <TextBox x:Name="txtCategoria" Width="200" Margin="5" Tag="Categoria" Style="{StaticResource PlaceholderTextBoxStyle}" Text="{Binding Categoria, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <ComboBox x:Name="cmbCategoria" Width="200" Margin="5" ItemsSource="{Binding CategoriiList}" DisplayMemberPath="NumeCategorie" SelectedValuePath="NumeCategorie" SelectedValue="{Binding Categoria, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <ComboBox x:Name="cmbProducatorId" Width="200" Margin="5" ItemsSource="{Binding ProducatoriList}" DisplayMemberPath="NumeProducator" SelectedValuePath="Id" SelectedValue="{Binding ProducatorId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <Button Content="Adaugă Produs" Command="{Binding AddProdusCommand}" Width="200" Margin="5"/>
             <Button Content="Actualizează Produs" Command="{Binding UpdateProdusCommand}" Width="200" Margin="5"/>
-            <Button Content="Șterge Produs" Command="{Binding DeleteProdusCommand}" Width="200" Margin="5"/>
+             <Button Content="Șterge Produs" Command="{Binding DeleteProdusCommand}" Width="200" Margin="5"/>
         </StackPanel>
-        <DataGrid ItemsSource="{Binding ProduseList}" AutoGenerateColumns="False" Width="750" Margin="25,217,25,10">
+        <DataGrid ItemsSource="{Binding ProduseList}" AutoGenerateColumns="False" Width="750" Margin="25,217,25,10" SelectedItem="{Binding SelectedProdus, Mode=TwoWay}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Nume Produs" Binding="{Binding NumeProdus}" IsReadOnly="True"/>

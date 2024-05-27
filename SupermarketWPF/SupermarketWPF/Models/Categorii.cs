@@ -17,5 +17,11 @@ namespace SupermarketWPF.Models
         public int Id { get; set; }
         public string NumeCategorie { get; set; }
         public Nullable<bool> IsActive { get; set; }
+
+        public class CategorieValoare
+        {
+            public string Categoria { get; set; }
+            public decimal ValoareTotala { get; set; }
+        }
     }
 }

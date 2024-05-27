@@ -13,6 +13,7 @@ namespace SupermarketWPF.ViewModels
         private readonly SupermarketDBEntities _context;
         private int _id;
         private string _numeCategorie;
+        private Categorii _selectedCategorie;
 
         public int Id
         {
@@ -24,6 +25,12 @@ namespace SupermarketWPF.ViewModels
         {
             get { return _numeCategorie; }
             set { _numeCategorie = value; OnPropertyChanged(nameof(NumeCategorie)); }
+        }
+
+        public Categorii SelectedCategorie
+        {
+            get { return _selectedCategorie; }
+            set { _selectedCategorie = value; OnPropertyChanged(nameof(SelectedCategorie)); }
         }
 
         public ObservableCollection<Categorii> CategoriiList { get; set; }
@@ -44,14 +51,12 @@ namespace SupermarketWPF.ViewModels
         {
             try
             {
-                // Validare câmpuri
                 if (string.IsNullOrWhiteSpace(NumeCategorie))
                 {
                     MessageBox.Show("Numele categoriei este obligatoriu.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
-                // Verificare existență categorie cu același nume
                 if (_context.Categorii.Any(c => c.NumeCategorie == NumeCategorie))
                 {
                     MessageBox.Show("Există deja o categorie cu acest nume.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -67,7 +72,6 @@ namespace SupermarketWPF.ViewModels
                 _context.SaveChanges();
                 CategoriiList.Add(categorie);
 
-                // Resetarea câmpurilor după adăugare
                 NumeCategorie = string.Empty;
                 OnPropertyChanged(nameof(NumeCategorie));
 
@@ -83,7 +87,6 @@ namespace SupermarketWPF.ViewModels
         {
             try
             {
-                // Validare câmpuri
                 if (Id == 0 || string.IsNullOrWhiteSpace(NumeCategorie))
                 {
                     MessageBox.Show("Toate câmpurile sunt obligatorii.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -112,25 +115,22 @@ namespace SupermarketWPF.ViewModels
         {
             try
             {
-                // Validare câmpuri
-                if (Id == 0)
+                if (SelectedCategorie == null)
                 {
-                    MessageBox.Show("ID-ul categoriei este obligatoriu.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Selectați o categorie pentru a o șterge.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
 
-                var categorie = _context.Categorii.FirstOrDefault(c => c.Id == Id);
-                if (categorie == null)
-                {
-                    MessageBox.Show($"Categoria cu ID-ul {Id} nu există.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
+                var categorieDeSters = SelectedCategorie; // Salvați referința la categoria de șters
 
-                _context.Categorii.Remove(categorie);
+                categorieDeSters.IsActive = false;
                 _context.SaveChanges();
-                CategoriiList.Remove(categorie);
 
-                MessageBox.Show("Categorie ștearsă: " + categorie.NumeCategorie);
+                CategoriiList.Remove(categorieDeSters);
+                SelectedCategorie = null;
+                OnPropertyChanged(nameof(SelectedCategorie));
+
+                MessageBox.Show("Categorie ștearsă: " + categorieDeSters.NumeCategorie);
             }
             catch (Exception ex)
             {

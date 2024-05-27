@@ -67,6 +67,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Helpers\PasswordHelpers.cs" />
     <Compile Include="Models\BonuriDeCasa.cs">
       <DependentUpon>SupermarketModel.tt</DependentUpon>
     </Compile>
@@ -113,11 +114,15 @@
     <Compile Include="ViewModels\ProducatoriVM.cs" />
     <Compile Include="ViewModels\ProduseVM.cs" />
     <Compile Include="ViewModels\StocuriVM.cs" />
+    <Compile Include="ViewModels\UtilizatoriVM.cs" />
     <Compile Include="View\AdministratorView.xaml.cs">
       <DependentUpon>AdministratorView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CasierView.xaml.cs">
       <DependentUpon>CasierView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CategorieValoriView.xaml.cs">
+      <DependentUpon>CategorieValoriView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CategoriiView.xaml.cs">
       <DependentUpon>CategoriiView.xaml</DependentUpon>
@@ -125,12 +130,22 @@
     <Compile Include="View\ProducatorView.xaml.cs">
       <DependentUpon>ProducatorView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\ProduseByProducatorView.xaml.cs">
+      <DependentUpon>ProduseByProducatorView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ProduseView.xaml.cs">
       <DependentUpon>ProduseView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\StocuriView.xaml.cs">
       <DependentUpon>StocuriView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\UtilizatoriView.xaml.cs">
+      <DependentUpon>UtilizatoriView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\CategorieValoriView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\CategoriiView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -161,11 +176,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\ProduseByProducatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ProduseView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\StocuriView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UtilizatoriView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

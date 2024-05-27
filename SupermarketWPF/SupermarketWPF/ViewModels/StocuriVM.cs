@@ -19,6 +19,7 @@ namespace SupermarketWPF.ViewModels
         private DateTime? _dataExpirarii;
         private decimal _pretAchizitie;
         private decimal _pretDeVanzare;
+        private Stocuri _selectedStoc;
 
         public int ProdusId
         {
@@ -46,7 +47,7 @@ namespace SupermarketWPF.ViewModels
 
         public DateTime? DataExpirarii
         {
-            get { return _dataExpirarii; }
+            get { return _dataAprovizionarii; }
             set { _dataExpirarii = value; OnPropertyChanged(nameof(DataExpirarii)); }
         }
 
@@ -55,7 +56,7 @@ namespace SupermarketWPF.ViewModels
             get { return _pretAchizitie; }
             set
             {
-                if (_context.Stocuri.Any(s => s.ProdusId == ProdusId))
+                if (_context.Stocuri.Any(s => s.ProdusId == ProdusId && (bool)s.IsActive))
                 {
                     MessageBox.Show("Prețul de achiziție nu poate fi modificat după data intrării produsului în supermarket.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
@@ -81,9 +82,16 @@ namespace SupermarketWPF.ViewModels
             }
         }
 
+        public Stocuri SelectedStoc
+        {
+            get { return _selectedStoc; }
+            set { _selectedStoc = value; OnPropertyChanged(nameof(SelectedStoc)); }
+        }
+
         public ObservableCollection<Stocuri> StocuriList { get; set; }
         public ICommand AddStocCommand { get; }
         public ICommand UpdatePretDeVanzareCommand { get; }
+        public ICommand DeleteStocCommand { get; }
 
         public StocuriVM()
         {
@@ -91,6 +99,7 @@ namespace SupermarketWPF.ViewModels
             StocuriList = new ObservableCollection<Stocuri>(_context.Stocuri.Where(s => (bool)s.IsActive).ToList());
             AddStocCommand = new RelayCommand(AddStoc);
             UpdatePretDeVanzareCommand = new RelayCommand(UpdatePretDeVanzare);
+            DeleteStocCommand = new RelayCommand(DeleteStoc);
         }
 
         private void AddStoc(object obj)
@@ -98,7 +107,7 @@ namespace SupermarketWPF.ViewModels
             try
             {
                 // Validare câmpuri
-                if (ProdusId <= 0 || Cantitate <= 0 || string.IsNullOrWhiteSpace(UnitateDeMasura) || PretAchizitie <= 0 || PretDeVanzare <= 0)
+                if (Cantitate <= 0 || string.IsNullOrWhiteSpace(UnitateDeMasura) || PretAchizitie <= 0)
                 {
                     MessageBox.Show("Toate câmpurile sunt obligatorii și trebuie să aibă valori pozitive.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
@@ -171,6 +180,37 @@ namespace SupermarketWPF.ViewModels
             }
         }
 
+        private void DeleteStoc(object obj)
+        {
+            try
+            {
+                if (SelectedStoc == null)
+                {
+                    MessageBox.Show("Selectați un stoc pentru a-l șterge.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                // Adăugați un mesaj de diagnostic
+                MessageBox.Show($"Stoc selectat: {SelectedStoc.ProdusId}", "Diagnostic", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                var stocDeSters = SelectedStoc; // Salvați referința la stocul de șters
+
+                _context.Stocuri.Attach(stocDeSters);
+                _context.Stocuri.Remove(stocDeSters);
+                _context.SaveChanges();
+
+                StocuriList.Remove(stocDeSters);
+                SelectedStoc = null; // Resetează selecția după ștergere
+                OnPropertyChanged(nameof(SelectedStoc));
+
+                MessageBox.Show("Stoc șters: " + stocDeSters.ProdusId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Delete Stoc Error");
+            }
+        }
+
         private void CalculatePretDeVanzare()
         {
             var adaosComercial = GetAdaosComercial();
@@ -191,3 +231,5 @@ namespace SupermarketWPF.ViewModels
         }
     }
 }
+
+

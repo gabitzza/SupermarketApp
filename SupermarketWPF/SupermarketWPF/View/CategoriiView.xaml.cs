@@ -25,5 +25,6 @@ namespace SupermarketWPF.View
             InitializeComponent();
             DataContext = new CategoriiVM();
         }
+     
     }
 }
