@@ -17,11 +17,11 @@ namespace SupermarketWPF.ViewModels
 
         public MainWindowVM()
         {
-            OpenAdministratorViewCommand = new RelayCommand(param => OpenAdministratorView());
+            OpenAdministratorViewCommand = new RelayCommand(OpenAdministratorView);
             OpenCasierViewCommand = new RelayCommand(param => OpenCasierLoginView());
         }
 
-        private void OpenAdministratorView()
+        private void OpenAdministratorView(object obj)
         {
             try
             {

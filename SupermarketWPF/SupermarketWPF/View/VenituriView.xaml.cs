@@ -1,6 +1,4 @@
-﻿using SupermarketWPF.Models;
-using SupermarketWPF.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,20 +11,20 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using SupermarketWPF.Models;
+using SupermarketWPF.ViewModels;
 namespace SupermarketWPF.View
 {
     /// <summary>
-    /// Interaction logic for AdministratorView.xaml
+    /// Interaction logic for VenituriView.xaml
     /// </summary>
-    public partial class AdministratorView : Window
+    public partial class VenituriView : Window
     {
-        private readonly SupermarketDBEntities _context;
-        public AdministratorView()
+        public VenituriView(SupermarketDBEntities context, int utilizatorId)
         {
             InitializeComponent();
-            DataContext = new AdministratorVM();
-
+            DataContext = new VenituriVM(context, utilizatorId);
         }
     }
 }
+

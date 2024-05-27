@@ -1,6 +1,4 @@
-﻿using SupermarketWPF.Models;
-using SupermarketWPF.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,16 +15,13 @@ using System.Windows.Shapes;
 namespace SupermarketWPF.View
 {
     /// <summary>
-    /// Interaction logic for AdministratorView.xaml
+    /// Interaction logic for IncasariView.xaml
     /// </summary>
-    public partial class AdministratorView : Window
+    public partial class IncasariView : Window
     {
-        private readonly SupermarketDBEntities _context;
-        public AdministratorView()
+        public IncasariView()
         {
             InitializeComponent();
-            DataContext = new AdministratorVM();
-
         }
     }
 }

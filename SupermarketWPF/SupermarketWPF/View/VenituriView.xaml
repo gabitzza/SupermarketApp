@@ -1,0 +1,19 @@
+﻿<Window x:Class="SupermarketWPF.View.VenituriView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Venituri" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <DatePicker x:Name="dpLunaSelectata" Width="200" Margin="5" SelectedDate="{Binding LunaSelectata, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DisplayDateStart="2020-01-01"/>
+            <Button Content="Vizualizează Venituri" Command="{Binding VizualizeazaVenituriCommand}" Width="200" Margin="5"/>
+        </StackPanel>
+
+        <!-- Adaugă DataGrid pentru vizualizarea sumelor încasate pe zi -->
+        <DataGrid ItemsSource="{Binding VenituriPeZiList}" AutoGenerateColumns="False" Width="750" Margin="25,217,25,10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Ziua" Binding="{Binding Ziua}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Suma Încasată" Binding="{Binding SumaIncasata}" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

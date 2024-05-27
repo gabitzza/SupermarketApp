@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
+using System.Windows.Media;
 using SupermarketWPF.Helpers;
 using SupermarketWPF.Models;
 using SupermarketWPF.View;
@@ -15,20 +16,27 @@ namespace SupermarketWPF.ViewModels
         public ICommand OpenCategoriiViewCommand { get; }
         public ICommand OpenProduseViewCommand { get; }
         public ICommand OpenStocuriViewCommand { get; }
-
+        public ICommand SelecteazaUtilizatorCommand { get; }
+        public ICommand VizualizeazaVenituriCommand{ get; }
         public ObservableCollection<BonuriDeCasa> BonuriDeCasaList { get; set; }
         public ObservableCollection<Utilizatori> UtilizatoriList { get; set; }
-        public ICommand VizualizeazaVenituriCommand { get; }
-        public AdministratorVM(SupermarketDBEntities context)
+        public ObservableCollection<string> Months { get; set; }
+        public ObservableCollection<BonuriDeCasa> VenituriList { get; set; }
+        public AdministratorVM()
         {
+            // Initialize the context
+            _context = new SupermarketDBEntities();
+
             OpenProducatoriViewCommand = new RelayCommand(OpenProducatoriView);
             OpenUtilizatoriViewCommand = new RelayCommand(OpenUtilizatoriView);
             OpenCategoriiViewCommand = new RelayCommand(OpenCategoriiView);
             OpenProduseViewCommand = new RelayCommand(OpenProduseView);
             OpenStocuriViewCommand = new RelayCommand(OpenStocuriView);
+
+            // Ensure _context is not null before accessing its properties
             UtilizatoriList = new ObservableCollection<Utilizatori>(_context.Utilizatori.Where(u => u.TipUtilizator == "Casier").ToList());
             VizualizeazaVenituriCommand = new RelayCommand(VizualizeazaVenituri);
-            _context = context;
+            Months = new ObservableCollection<string>(System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.MonthNames.Take(12));
         }
 
         private void VizualizeazaVenituri(object obj)

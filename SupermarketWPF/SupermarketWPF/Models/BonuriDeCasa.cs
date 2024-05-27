@@ -14,6 +14,8 @@ namespace SupermarketWPF.Models
     
     public partial class BonuriDeCasa
     {
+        public DateTime Data { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public BonuriDeCasa()
         {

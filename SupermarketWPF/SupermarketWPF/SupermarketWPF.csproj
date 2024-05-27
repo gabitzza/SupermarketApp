@@ -110,6 +110,7 @@
     <Compile Include="ViewModels\AdministratorVM.cs" />
     <Compile Include="ViewModels\CasierVM.cs" />
     <Compile Include="ViewModels\CategoriiVM.cs" />
+    <Compile Include="ViewModels\IncasariVM.cs" />
     <Compile Include="ViewModels\LoginVM.cs" />
     <Compile Include="ViewModels\MainWindowVM.cs" />
     <Compile Include="ViewModels\ProducatoriVM.cs" />
@@ -127,6 +128,9 @@
     </Compile>
     <Compile Include="View\CategoriiView.xaml.cs">
       <DependentUpon>CategoriiView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\IncasariView.xaml.cs">
+      <DependentUpon>IncasariView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
@@ -151,6 +155,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CategoriiView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\IncasariView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

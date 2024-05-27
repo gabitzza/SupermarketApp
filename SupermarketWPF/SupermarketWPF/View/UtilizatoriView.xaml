@@ -11,8 +11,11 @@
             <Button Content="Adaugă Utilizator" Command="{Binding AddUtilizatorCommand}" Width="200" Margin="5"/>
             <Button Content="Actualizează Utilizator" Command="{Binding UpdateUtilizatorCommand}" Width="200" Margin="5"/>
             <Button Content="Șterge Utilizator" Command="{Binding DeleteUtilizatorCommand}" Width="200" Margin="5"/>
+             <ComboBox x:Name="UtilizatoriComboBox" ItemsSource="{Binding UtilizatoriList}" DisplayMemberPath="Nume" Width="200" Margin="5"/>
+            <Button Content="Selectează Utilizator" Command="{Binding SelecteazaUtilizatorCommand}" Width="200" Margin="5"/>
         </StackPanel>
-        <DataGrid ItemsSource="{Binding UtilizatoriList}" AutoGenerateColumns="False" Width="750" Margin="25,217,25,10" SelectedItem="{Binding SelectedUtilizator}">
+
+        <DataGrid ItemsSource="{Binding UtilizatoriList}" AutoGenerateColumns="False" Width="750" Margin="25,279,25,10" SelectedItem="{Binding SelectedUtilizator}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Nume Utilizator" Binding="{Binding NumeUtilizator}" IsReadOnly="True"/>

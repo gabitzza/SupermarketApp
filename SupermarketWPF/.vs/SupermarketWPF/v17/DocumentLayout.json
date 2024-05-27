@@ -3,64 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\view\\utilizatoriview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\utilizatoriview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\viewmodels\\utilizatorivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\viewmodels\\utilizatorivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\administratorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\administratorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\utilizatoriview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\utilizatoriview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\utilizatoriview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\utilizatoriview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\viewmodels\\administratorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\viewmodels\\administratorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\viewmodels\\casiervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\viewmodels\\casiervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\viewmodels\\incasarivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\viewmodels\\incasarivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\view\\casierview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\casierview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\models\\bonuridecasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\models\\bonuridecasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\view\\casierview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\casierview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\view\\incasariview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\incasariview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\viewmodels\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\viewmodels\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\view\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\view\\utilizatoriview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\utilizatoriview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|c:\\users\\cub bike service\\desktop\\gabit\\lab\\anul 2\\supermarket\\supermarketwpf\\supermarketwpf\\viewmodels\\utilizatorivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\viewmodels\\utilizatorivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\administratorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\administratorview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\administratorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\administratorview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\viewmodels\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\viewmodels\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\viewmodels\\casiervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\viewmodels\\casiervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\casierview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\casierview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\casierview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\casierview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\view\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\view\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\helpers\\passwordhelpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,6 +141,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\supermarketwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39662324-076E-4106-8FA1-BBB19E3DB79A}|SupermarketWPF\\SupermarketWPF.csproj|solutionrelative:supermarketwpf\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\VenituriView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SupermarketWPF\\View\\VenituriView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\VenituriVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SupermarketWPF\\ViewModels\\VenituriVM.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\VenituriView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SupermarketWPF\\View\\VenituriView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -138,98 +162,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UtilizatoriView.xaml",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\UtilizatoriView.xaml",
-              "RelativeDocumentMoniker": "SupermarketWPF\\View\\UtilizatoriView.xaml",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\UtilizatoriView.xaml",
-              "RelativeToolTip": "SupermarketWPF\\View\\UtilizatoriView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-27T20:12:35.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdministratorVM.cs",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\AdministratorVM.cs",
-              "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\AdministratorVM.cs",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\AdministratorVM.cs",
-              "RelativeToolTip": "SupermarketWPF\\ViewModels\\AdministratorVM.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAiwBwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T12:24:12.871Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdministratorView.xaml",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\AdministratorView.xaml",
-              "RelativeDocumentMoniker": "SupermarketWPF\\View\\AdministratorView.xaml",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\AdministratorView.xaml",
-              "RelativeToolTip": "SupermarketWPF\\View\\AdministratorView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-26T18:20:00.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CasierVM.cs",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\CasierVM.cs",
-              "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\CasierVM.cs",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\CasierVM.cs",
-              "RelativeToolTip": "SupermarketWPF\\ViewModels\\CasierVM.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAADwvzIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T20:02:29.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CasierView.xaml",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\CasierView.xaml",
-              "RelativeDocumentMoniker": "SupermarketWPF\\View\\CasierView.xaml",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\CasierView.xaml",
-              "RelativeToolTip": "SupermarketWPF\\View\\CasierView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-27T20:02:06.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\LoginView.xaml.cs",
-              "RelativeDocumentMoniker": "SupermarketWPF\\View\\LoginView.xaml.cs",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\LoginView.xaml.cs",
-              "RelativeToolTip": "SupermarketWPF\\View\\LoginView.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T18:31:20.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginView.xaml",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\LoginView.xaml",
-              "RelativeDocumentMoniker": "SupermarketWPF\\View\\LoginView.xaml",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\LoginView.xaml",
-              "RelativeToolTip": "SupermarketWPF\\View\\LoginView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-27T18:29:16.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "UtilizatoriView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\UtilizatoriView.xaml.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\UtilizatoriView.xaml.cs",
@@ -242,84 +183,196 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "UtilizatoriVM.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\UtilizatoriVM.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\UtilizatoriVM.cs",
               "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\UtilizatoriVM.cs",
               "RelativeToolTip": "SupermarketWPF\\ViewModels\\UtilizatoriVM.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAkwDsAAABKAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAqwJAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T15:08:17.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AdministratorView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\AdministratorView.xaml.cs",
-              "RelativeDocumentMoniker": "SupermarketWPF\\View\\AdministratorView.xaml.cs",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\AdministratorView.xaml.cs",
-              "RelativeToolTip": "SupermarketWPF\\View\\AdministratorView.xaml.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAiwBsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T12:24:19.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CasierView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\CasierView.xaml.cs",
-              "RelativeDocumentMoniker": "SupermarketWPF\\View\\CasierView.xaml.cs",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\CasierView.xaml.cs",
-              "RelativeToolTip": "SupermarketWPF\\View\\CasierView.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T20:02:06.179Z",
+              "DocumentIndex": 2,
+              "Title": "UtilizatoriView.xaml",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\UtilizatoriView.xaml",
+              "RelativeDocumentMoniker": "SupermarketWPF\\View\\UtilizatoriView.xaml",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\UtilizatoriView.xaml",
+              "RelativeToolTip": "SupermarketWPF\\View\\UtilizatoriView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-27T20:12:35.422Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindowVM.cs",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\MainWindowVM.cs",
-              "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\MainWindowVM.cs",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\MainWindowVM.cs",
-              "RelativeToolTip": "SupermarketWPF\\ViewModels\\MainWindowVM.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAA7wCgAAAAdAAAA",
+              "DocumentIndex": 3,
+              "Title": "AdministratorVM.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\AdministratorVM.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\AdministratorVM.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\AdministratorVM.cs",
+              "RelativeToolTip": "SupermarketWPF\\ViewModels\\AdministratorVM.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAmwBMAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T18:41:54.407Z",
+              "WhenOpened": "2024-05-26T12:24:12.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IncasariVM.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\IncasariVM.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\IncasariVM.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\IncasariVM.cs",
+              "RelativeToolTip": "SupermarketWPF\\ViewModels\\IncasariVM.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T21:21:29.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BonuriDeCasa.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\Models\\BonuriDeCasa.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\Models\\BonuriDeCasa.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\Models\\BonuriDeCasa.cs",
+              "RelativeToolTip": "SupermarketWPF\\Models\\BonuriDeCasa.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwBAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T21:25:08.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "LoginVM.cs",
-              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\LoginVM.cs",
-              "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\LoginVM.cs",
-              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\LoginVM.cs",
-              "RelativeToolTip": "SupermarketWPF\\ViewModels\\LoginVM.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowCsAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T18:30:52.258Z",
+              "Title": "IncasariView.xaml",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\IncasariView.xaml",
+              "RelativeDocumentMoniker": "SupermarketWPF\\View\\IncasariView.xaml",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\IncasariView.xaml",
+              "RelativeToolTip": "SupermarketWPF\\View\\IncasariView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-27T21:18:26.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\MainWindow.xaml.cs",
               "RelativeToolTip": "SupermarketWPF\\View\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T18:41:47.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\LoginVM.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\LoginVM.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\LoginVM.cs",
+              "RelativeToolTip": "SupermarketWPF\\ViewModels\\LoginVM.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA1wCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T18:30:52.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\LoginView.xaml.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\View\\LoginView.xaml.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\LoginView.xaml.cs",
+              "RelativeToolTip": "SupermarketWPF\\View\\LoginView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAnwAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T18:31:20.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "VenituriView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\VenituriView.xaml.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\View\\VenituriView.xaml.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\VenituriView.xaml.cs",
+              "RelativeToolTip": "SupermarketWPF\\View\\VenituriView.xaml.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAiwBkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T20:37:17.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "VenituriVM.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\VenituriVM.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\VenituriVM.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\VenituriVM.cs",
+              "RelativeToolTip": "SupermarketWPF\\ViewModels\\VenituriVM.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAjwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T20:40:04.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "VenituriView.xaml",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\VenituriView.xaml",
+              "RelativeDocumentMoniker": "SupermarketWPF\\View\\VenituriView.xaml",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\VenituriView.xaml",
+              "RelativeToolTip": "SupermarketWPF\\View\\VenituriView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-27T20:36:42.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdministratorView.xaml",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\AdministratorView.xaml",
+              "RelativeDocumentMoniker": "SupermarketWPF\\View\\AdministratorView.xaml",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\AdministratorView.xaml",
+              "RelativeToolTip": "SupermarketWPF\\View\\AdministratorView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T18:20:00.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "AdministratorView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\AdministratorView.xaml.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\View\\AdministratorView.xaml.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\AdministratorView.xaml.cs",
+              "RelativeToolTip": "SupermarketWPF\\View\\AdministratorView.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAnwBsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T12:24:19.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindowVM.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\MainWindowVM.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\MainWindowVM.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\MainWindowVM.cs",
+              "RelativeToolTip": "SupermarketWPF\\ViewModels\\MainWindowVM.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T18:41:54.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\MainWindow.xaml",
@@ -330,12 +383,56 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CasierView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\CasierView.xaml.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\View\\CasierView.xaml.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\CasierView.xaml.cs",
+              "RelativeToolTip": "SupermarketWPF\\View\\CasierView.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T20:02:06.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CasierVM.cs",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\CasierVM.cs",
+              "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\CasierVM.cs",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\CasierVM.cs",
+              "RelativeToolTip": "SupermarketWPF\\ViewModels\\CasierVM.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAADwvzIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T20:02:29.753Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "CasierView.xaml",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\CasierView.xaml",
+              "RelativeDocumentMoniker": "SupermarketWPF\\View\\CasierView.xaml",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\CasierView.xaml",
+              "RelativeToolTip": "SupermarketWPF\\View\\CasierView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-27T20:02:06.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginView.xaml",
+              "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\LoginView.xaml",
+              "RelativeDocumentMoniker": "SupermarketWPF\\View\\LoginView.xaml",
+              "ToolTip": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\LoginView.xaml",
+              "RelativeToolTip": "SupermarketWPF\\View\\LoginView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-27T18:29:16.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "PasswordHelpers.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\Helpers\\PasswordHelpers.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\Helpers\\PasswordHelpers.cs",
@@ -347,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "CategoriiVM.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\CategoriiVM.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\CategoriiVM.cs",
@@ -359,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "ProducatoriVM.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\ProducatoriVM.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\ProducatoriVM.cs",
@@ -371,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "ProduseVM.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\ProduseVM.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\ProduseVM.cs",
@@ -383,7 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "StocuriView.xaml",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\StocuriView.xaml",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\StocuriView.xaml",
@@ -395,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "ProduseView.xaml",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\ProduseView.xaml",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\ProduseView.xaml",
@@ -407,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "StocuriView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\StocuriView.xaml.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\StocuriView.xaml.cs",
@@ -419,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "StocuriVM.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\ViewModels\\StocuriVM.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\ViewModels\\StocuriVM.cs",
@@ -431,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "CategorieValoriView.xaml",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\CategorieValoriView.xaml",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\CategorieValoriView.xaml",
@@ -443,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Categorii.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\Models\\Categorii.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\Models\\Categorii.cs",
@@ -455,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Produse.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\Models\\Produse.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\Models\\Produse.cs",
@@ -467,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "ProducatorView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\ProducatorView.xaml.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\ProducatorView.xaml.cs",
@@ -479,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "CategorieValoriView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\CategorieValoriView.xaml.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\CategorieValoriView.xaml.cs",
@@ -491,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "ProduseView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\ProduseView.xaml.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\ProduseView.xaml.cs",
@@ -503,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "ProduseByProducatorView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\ProduseByProducatorView.xaml.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\ProduseByProducatorView.xaml.cs",
@@ -515,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "ProduseByProducatorView.xaml",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\View\\ProduseByProducatorView.xaml",
               "RelativeDocumentMoniker": "SupermarketWPF\\View\\ProduseByProducatorView.xaml",
@@ -527,7 +624,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\CUB Bike Service\\Desktop\\Gabit\\Lab\\Anul 2\\Supermarket\\SupermarketWPF\\SupermarketWPF\\App.xaml.cs",
               "RelativeDocumentMoniker": "SupermarketWPF\\App.xaml.cs",
