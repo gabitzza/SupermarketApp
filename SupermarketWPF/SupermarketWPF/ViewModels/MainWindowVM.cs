@@ -18,7 +18,7 @@ namespace SupermarketWPF.ViewModels
         public MainWindowVM()
         {
             OpenAdministratorViewCommand = new RelayCommand(param => OpenAdministratorView());
-            OpenCasierViewCommand = new RelayCommand(param => OpenCasierView());
+            OpenCasierViewCommand = new RelayCommand(param => OpenCasierLoginView());
         }
 
         private void OpenAdministratorView()
@@ -34,12 +34,12 @@ namespace SupermarketWPF.ViewModels
             }
         }
 
-        private void OpenCasierView()
+        private void OpenCasierLoginView()
         {
             try
             {
-                var casierView = new CasierView();
-                casierView.Show();
+                var loginView = new LoginView();
+                loginView.Show();
             }
             catch (Exception ex)
             {

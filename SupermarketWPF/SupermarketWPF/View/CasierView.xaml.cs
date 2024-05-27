@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SupermarketWPF.ViewModels;
 
 namespace SupermarketWPF.View
 {
@@ -22,6 +23,7 @@ namespace SupermarketWPF.View
         public CasierView()
         {
             InitializeComponent();
+            DataContext = new CasierVM();
         }
     }
 }
