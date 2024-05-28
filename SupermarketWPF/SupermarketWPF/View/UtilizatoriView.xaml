@@ -11,7 +11,8 @@
             <Button Content="Adaugă Utilizator" Command="{Binding AddUtilizatorCommand}" Width="200" Margin="5"/>
             <Button Content="Actualizează Utilizator" Command="{Binding UpdateUtilizatorCommand}" Width="200" Margin="5"/>
             <Button Content="Șterge Utilizator" Command="{Binding DeleteUtilizatorCommand}" Width="200" Margin="5"/>
-             <ComboBox x:Name="UtilizatoriComboBox" ItemsSource="{Binding UtilizatoriList}" DisplayMemberPath="Nume" Width="200" Margin="5"/>
+            <ComboBox x:Name="UtilizatoriComboBox" ItemsSource="{Binding UtilizatoriList}" DisplayMemberPath="NumeUtilizator" SelectedItem="{Binding SelectedUtilizator}" Width="200" Margin="5"/>
+
             <Button Content="Selectează Utilizator" Command="{Binding SelecteazaUtilizatorCommand}" Width="200" Margin="5"/>
         </StackPanel>
 

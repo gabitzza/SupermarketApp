@@ -67,7 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Helpers\CategorieValoare.cs" />
     <Compile Include="Helpers\PasswordHelpers.cs" />
+    <Compile Include="Helpers\TextBoxHelpers.cs" />
     <Compile Include="Models\BonuriDeCasa.cs">
       <DependentUpon>SupermarketModel.tt</DependentUpon>
     </Compile>
@@ -109,6 +111,7 @@
     </Compile>
     <Compile Include="ViewModels\AdministratorVM.cs" />
     <Compile Include="ViewModels\CasierVM.cs" />
+    <Compile Include="ViewModels\CategorieValoriVM.cs" />
     <Compile Include="ViewModels\CategoriiVM.cs" />
     <Compile Include="ViewModels\IncasariVM.cs" />
     <Compile Include="ViewModels\LoginVM.cs" />

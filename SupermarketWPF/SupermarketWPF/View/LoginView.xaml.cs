@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace SupermarketWPF.View
@@ -18,5 +19,9 @@ namespace SupermarketWPF.View
                 viewModel.Password = ((PasswordBox)sender).Password;
             }
         }
+      
+
     }
+
+
 }

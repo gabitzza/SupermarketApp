@@ -21,7 +21,7 @@ namespace SupermarketWPF.View
     /// </summary>
     public partial class AdministratorView : Window
     {
-        private readonly SupermarketDBEntities _context;
+   
         public AdministratorView()
         {
             InitializeComponent();

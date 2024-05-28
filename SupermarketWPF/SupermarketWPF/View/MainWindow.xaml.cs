@@ -26,5 +26,18 @@ namespace SupermarketWPF.View
             InitializeComponent();
             DataContext = new MainWindowVM();
         }
+
+        private void OpenCasierView_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var view = new LoginView();
+                view.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to open LoginView: " + ex.Message);
+            }
+        }
     }
 }

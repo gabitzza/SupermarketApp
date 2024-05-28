@@ -19,9 +19,10 @@ namespace SupermarketWPF.View
     /// </summary>
     public partial class IncasariView : Window
     {
-        public IncasariView()
+        public IncasariView(int utilizatorId)
         {
             InitializeComponent();
+            DataContext = new ViewModels.IncasariVM(utilizatorId);
         }
     }
 }

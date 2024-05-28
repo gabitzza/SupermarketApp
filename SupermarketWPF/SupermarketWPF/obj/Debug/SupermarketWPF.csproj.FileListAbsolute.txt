@@ -8,14 +8,17 @@ C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\Su
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\SupermarketWPF.csproj.AssemblyReference.cache
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\CategorieValoriView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\CategoriiView.baml
+C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\IncasariView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\LoginView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\AdministratorView.baml
+C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\CasierView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\ProducatorView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\ProduseByProducatorView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\ProduseView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\StocuriView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\CategorieValoriView.g.cs
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\CategoriiView.g.cs
+C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\IncasariView.g.cs
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\LoginView.g.cs
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\MainWindow.g.cs
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\AdministratorView.g.cs
@@ -31,7 +34,6 @@ C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\Su
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\SupermarketWPF_MarkupCompile.cache
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\SupermarketWPF_MarkupCompile.lref
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\MainWindow.baml
-C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\CasierView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\UtilizatoriView.baml
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\SupermarketWPF.g.resources
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\SupermarketWPF.Properties.Resources.resources
@@ -40,5 +42,3 @@ C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\Su
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\Supermar.BFFA1326.Up2Date
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\SupermarketWPF.exe
 C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\SupermarketWPF.pdb
-C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\IncasariView.g.cs
-C:\Users\CUB Bike Service\Desktop\Gabit\Lab\Anul 2\Supermarket\SupermarketWPF\SupermarketWPF\obj\Debug\View\IncasariView.baml

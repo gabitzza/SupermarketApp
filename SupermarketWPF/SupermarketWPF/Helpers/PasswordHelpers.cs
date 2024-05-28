@@ -95,5 +95,7 @@ namespace SupermarketWPF.Helpers
             SetBoundPassword(passwordBox, passwordBox.Password);
             SetUpdatingPassword(passwordBox, false);
         }
+
+
     }
 }

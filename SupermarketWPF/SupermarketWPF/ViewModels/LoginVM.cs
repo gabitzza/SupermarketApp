@@ -4,6 +4,7 @@ using System.Windows.Input;
 using System.Linq;
 using System.Windows;
 using SupermarketWPF.View;
+using System;
 
 namespace SupermarketWPF.ViewModels
 {
@@ -26,7 +27,7 @@ namespace SupermarketWPF.ViewModels
         }
 
         public ICommand LoginCommand { get; }
-        public static Utilizatori UtilizatorConectat { get; private set; }
+
         public LoginVM()
         {
             _context = new SupermarketDBEntities();
@@ -38,13 +39,15 @@ namespace SupermarketWPF.ViewModels
             var user = _context.Utilizatori.FirstOrDefault(u => u.NumeUtilizator == Username && u.Parola == Password && u.TipUtilizator == "Casier");
             if (user != null)
             {
-                UtilizatorConectat = user;
                 MessageBox.Show("Autentificare reușită!", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
-                // Deschide fereastra pentru casier
-                CasierView casierView = new CasierView();
+
+                // Deschide fereastra pentru casier și asigură-te că se deschide corect
+                var casierView = new CasierView(user.Id);
                 casierView.Show();
+
                 // Închide fereastra de login
-                Application.Current.Windows.OfType<Window>().SingleOrDefault(w => w.IsActive).Close();
+               
+               
             }
             else
             {

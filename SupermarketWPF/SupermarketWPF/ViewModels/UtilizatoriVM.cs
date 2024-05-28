@@ -1,5 +1,6 @@
 ﻿using SupermarketWPF.Helpers;
 using SupermarketWPF.Models;
+using SupermarketWPF.View;
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -52,17 +53,33 @@ namespace SupermarketWPF.ViewModels
         public ICommand AddUtilizatorCommand { get; }
         public ICommand UpdateUtilizatorCommand { get; }
         public ICommand DeleteUtilizatorCommand { get; }
-
+        public ICommand SelecteazaUtilizatorCommand { get; }
         public UtilizatoriVM()
         {
             _context = new SupermarketDBEntities();
-            UtilizatoriList = new ObservableCollection<Utilizatori>(_context.Utilizatori.Where(u => u.IsActive == true).ToList());
+            UtilizatoriList = new ObservableCollection<Utilizatori>(_context.Utilizatori.Where(u => u.IsActive == true && u.TipUtilizator == "Casier").ToList());
             TipuriUtilizatori = new ObservableCollection<string> { "Administrator", "Casier" };
             AddUtilizatorCommand = new RelayCommand(AddUtilizator);
             UpdateUtilizatorCommand = new RelayCommand(UpdateUtilizator);
             DeleteUtilizatorCommand = new RelayCommand(DeleteUtilizator);
+            SelecteazaUtilizatorCommand = new RelayCommand(OpenIncasariView);
+            SelectedUtilizator = UtilizatoriList.FirstOrDefault();
         }
+        private void OpenIncasariView(object obj)
+        {
+            if (SelectedUtilizator == null)
+            {
+                MessageBox.Show("Selectați un utilizator pentru a vizualiza veniturile.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
+            var incasariVM = new IncasariVM(SelectedUtilizator.Id);
+           var view = new IncasariView(SelectedUtilizator.Id)
+{
+    DataContext = incasariVM
+};
+            view.Show();
+        }
         private void AddUtilizator(object obj)
         {
             try

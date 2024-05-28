@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Input;
 using SupermarketWPF.Models;
 using SupermarketWPF.Helpers;
+using SupermarketWPF.View;
 
 namespace SupermarketWPF.ViewModels
 {
@@ -14,6 +15,7 @@ namespace SupermarketWPF.ViewModels
         private int _id;
         private string _numeCategorie;
         private Categorii _selectedCategorie;
+        public ObservableCollection<CategorieValoare> CategoriiValoareList { get; set; }
 
         public int Id
         {
@@ -37,6 +39,7 @@ namespace SupermarketWPF.ViewModels
         public ICommand AddCategorieCommand { get; }
         public ICommand UpdateCategorieCommand { get; }
         public ICommand DeleteCategorieCommand { get; }
+        public ICommand ViewCategorieValoareCommand { get; }
 
         public CategoriiVM()
         {
@@ -45,6 +48,27 @@ namespace SupermarketWPF.ViewModels
             AddCategorieCommand = new RelayCommand(AddCategorie);
             UpdateCategorieCommand = new RelayCommand(UpdateCategorie);
             DeleteCategorieCommand = new RelayCommand(DeleteCategorie);
+            ViewCategorieValoareCommand = new RelayCommand(ViewCategorieValoare);
+        }
+
+        private void ViewCategorieValoare(object obj)
+        {
+            if (SelectedCategorie == null)
+            {
+                MessageBox.Show("Selectați o categorie pentru a vizualiza valoarea totală.", "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            try
+            {
+                var viewModel = new CategorieValoriVM(SelectedCategorie);
+                var view = new CategorieValoriView(viewModel);
+                view.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("A apărut o eroare: " + ex.Message, "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void AddCategorie(object obj)
@@ -121,7 +145,7 @@ namespace SupermarketWPF.ViewModels
                     return;
                 }
 
-                var categorieDeSters = SelectedCategorie; // Salvați referința la categoria de șters
+                var categorieDeSters = SelectedCategorie;
 
                 categorieDeSters.IsActive = false;
                 _context.SaveChanges();

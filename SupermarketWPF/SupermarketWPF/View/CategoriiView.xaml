@@ -8,6 +8,7 @@
             <Button Content="Adaugă Categorie" Command="{Binding AddCategorieCommand}" Width="200" Margin="5"/>
             <Button Content="Actualizează Categorie" Command="{Binding UpdateCategorieCommand}" Width="200" Margin="5"/>
             <Button Content="Șterge Categorie" Command="{Binding DeleteCategorieCommand}" Width="200" Margin="5"/>
+            <ComboBox x:Name="cmbCategorii" ItemsSource="{Binding CategoriiList}" DisplayMemberPath="NumeCategorie" SelectedItem="{Binding SelectedCategorie}" Width="200" Margin="5"/>
             <Button Content="Vizualizează Valoare pe Categorie" Command="{Binding ViewCategorieValoareCommand}" Width="200" Margin="5"/>
         </StackPanel>
         <DataGrid ItemsSource="{Binding CategoriiList}" AutoGenerateColumns="False" Width="750" Margin="25,217,25,10" SelectedItem="{Binding SelectedCategorie, Mode=TwoWay}">

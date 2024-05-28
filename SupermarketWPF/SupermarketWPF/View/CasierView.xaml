@@ -1,12 +1,39 @@
 ﻿<Window x:Class="SupermarketWPF.View.CasierView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SupermarketWPF.View"
-        mc:Ignorable="d"
-        Title="CasierView" Height="450" Width="800">
+        Title="Casier" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <ComboBox Width="200" Margin="10" ItemsSource="{Binding SearchCriteria}" SelectedItem="{Binding SearchBy}" />
+            <TextBox Width="200" Margin="10" Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged}" />
+            <Button Content="Search" Command="{Binding SearchCommand}" Width="200" Margin="10" />
+            <DataGrid ItemsSource="{Binding FilteredProduseList}" AutoGenerateColumns="False" Width="750" Margin="10" SelectedItem="{Binding SelectedProdus}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Nume Produs" Binding="{Binding NumeProdus}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Cod De Bare" Binding="{Binding CodDeBare}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Categoria" Binding="{Binding Categoria}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Producator" Binding="{Binding Producatori.NumeProducator}" IsReadOnly="True"/>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Add to Bon" Command="{Binding DataContext.AddToBonCommand, RelativeSource={RelativeSource AncestorType=Window}}" CommandParameter="{Binding}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <TextBlock Text="Bon" FontWeight="Bold" Margin="10"/>
+            <DataGrid ItemsSource="{Binding BonList}" AutoGenerateColumns="False" Width="750" Margin="10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Produs" Binding="{Binding Produs.NumeProdus}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Cantitate" Binding="{Binding Cantitate}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Pret" Binding="{Binding Pret}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Subtotal" Binding="{Binding Subtotal}" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <TextBlock Text="{Binding BonList, StringFormat='Total: {0:C}'}" Margin="10"/>
+            <Button Content="Emite Bon" Command="{Binding EmitBonCommand}" Width="200" Margin="10" />
+        </StackPanel>
     </Grid>
 </Window>

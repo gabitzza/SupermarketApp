@@ -1,13 +1,13 @@
 ﻿<Window x:Class="SupermarketWPF.View.CategorieValoriView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Valori Categorii" Height="450" Width="800">
+        Title="Valori Categorii" Height="200" Width="400">
     <Grid>
-        <DataGrid ItemsSource="{Binding CategorieValoriList}" AutoGenerateColumns="False" Width="750" Margin="25,25,25,25">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Categorie" Binding="{Binding Categoria}" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Valoare Totală" Binding="{Binding ValoareTotala}" IsReadOnly="True"/>
-            </DataGrid.Columns>
-        </DataGrid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Categorie:" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <TextBlock Text="{Binding SelectedCategorie.NumeCategorie}" FontSize="16" Margin="0,0,0,20"/>
+            <TextBlock Text="Valoare Totală:" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <TextBlock Text="{Binding ValoareTotala, StringFormat=C}" FontSize="16" Margin="0,0,0,20"/>
+        </StackPanel>
     </Grid>
 </Window>

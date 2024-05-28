@@ -1,29 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Windows.Controls;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using SupermarketWPF.Models;
 using SupermarketWPF.ViewModels;
 
 namespace SupermarketWPF.View
 {
-    /// <summary>
-    /// Interaction logic for CasierView.xaml
-    /// </summary>
     public partial class CasierView : Window
     {
-        public CasierView()
+        public CasierView(int utilizatorId)
         {
             InitializeComponent();
-            DataContext = new CasierVM();
+            DataContext = new CasierVM(utilizatorId);
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var dataGrid = sender as DataGrid;
+            var selectedProduct = dataGrid.SelectedItem as Produse;
+
+            if (selectedProduct != null)
+            {
+                var viewModel = DataContext as CasierVM;
+                viewModel.AddToBonCommand.Execute(selectedProduct);
+            }
         }
     }
 }
