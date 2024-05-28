@@ -7,7 +7,7 @@
             <ComboBox Width="200" Margin="10" ItemsSource="{Binding SearchCriteria}" SelectedItem="{Binding SearchBy}" />
             <TextBox Width="200" Margin="10" Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged}" />
             <Button Content="Search" Command="{Binding SearchCommand}" Width="200" Margin="10" />
-            <DataGrid ItemsSource="{Binding FilteredProduseList}" AutoGenerateColumns="False" Width="750" Margin="10" SelectedItem="{Binding SelectedProdus}">
+            <DataGrid ItemsSource="{Binding FilteredProduseList}" AutoGenerateColumns="False" Width="750" Margin="10">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True"/>
                     <DataGridTextColumn Header="Nume Produs" Binding="{Binding NumeProdus}" IsReadOnly="True"/>
@@ -32,7 +32,7 @@
                     <DataGridTextColumn Header="Subtotal" Binding="{Binding Subtotal}" IsReadOnly="True"/>
                 </DataGrid.Columns>
             </DataGrid>
-            <TextBlock Text="{Binding BonList, StringFormat='Total: {0:C}'}" Margin="10"/>
+            <TextBlock Text="{Binding TotalSum, StringFormat='Total: {0:C}'}" Margin="10"/>
             <Button Content="Emite Bon" Command="{Binding EmitBonCommand}" Width="200" Margin="10" />
         </StackPanel>
     </Grid>

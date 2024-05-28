@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Input;
 using SupermarketWPF.Helpers;
 using SupermarketWPF.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Menu;
 
 namespace SupermarketWPF.ViewModels
 {
@@ -115,13 +116,14 @@ namespace SupermarketWPF.ViewModels
                 var bonItem = BonList.FirstOrDefault(b => b.Produs.Id == produs.Id);
                 if (bonItem == null)
                 {
-                    BonList.Add(new BonItem
+                    bonItem = new BonItem
                     {
                         Produs = produs,
                         Cantitate = 1,
                         Pret = stoc.PretDeVanzare,
                         Subtotal = stoc.PretDeVanzare
-                    });
+                    };
+                    BonList.Add(bonItem);
                 }
                 else
                 {
@@ -129,8 +131,17 @@ namespace SupermarketWPF.ViewModels
                     bonItem.Subtotal = bonItem.Cantitate * bonItem.Pret;
                 }
 
+                stoc.Cantitate--;
+                if (stoc.Cantitate <= 0)
+                {
+                    stoc.IsActive = false;
+                }
+                _context.SaveChanges();
+
                 UpdateTotalSum();
                 OnPropertyChanged(nameof(BonList));
+                // Notify property changes for the specific BonItem
+                bonItem.NotifyPropertiesChanged();
             }
             else
             {
@@ -173,16 +184,6 @@ namespace SupermarketWPF.ViewModels
                     IsActive = true
                 };
 
-                var stoc = _context.Stocuri.FirstOrDefault(s => s.ProdusId == item.Produs.Id && s.IsActive == true);
-                if (stoc != null)
-                {
-                    stoc.Cantitate -= item.Cantitate;
-                    if (stoc.Cantitate <= 0)
-                    {
-                        stoc.IsActive = false;
-                    }
-                }
-
                 _context.BonuriDeCasa_Produse.Add(bonItem);
             }
 
@@ -195,11 +196,48 @@ namespace SupermarketWPF.ViewModels
         }
     }
 
-    public class BonItem
+    public class BonItem : BaseVM
     {
-        public Produse Produs { get; set; }
-        public int Cantitate { get; set; }
-        public decimal Pret { get; set; }
-        public decimal Subtotal { get; set; }
+        private Produse _produs;
+        private int _cantitate;
+        private decimal _pret;
+        private decimal _subtotal;
+
+        public Produse Produs
+        {
+            get { return _produs; }
+            set { _produs = value; OnPropertyChanged(nameof(Produs)); }
+        }
+
+        public int Cantitate
+        {
+            get { return _cantitate; }
+            set { _cantitate = value; OnPropertyChanged(nameof(Cantitate)); UpdateSubtotal(); }
+        }
+
+        public decimal Pret
+        {
+            get { return _pret; }
+            set { _pret = value; OnPropertyChanged(nameof(Pret)); UpdateSubtotal(); }
+        }
+
+        public decimal Subtotal
+        {
+            get { return _subtotal; }
+            set { _subtotal = value; OnPropertyChanged(nameof(Subtotal)); }
+        }
+
+        private void UpdateSubtotal()
+        {
+            Subtotal = Cantitate * Pret;
+        }
+
+        public void NotifyPropertiesChanged()
+        {
+            OnPropertyChanged(nameof(Cantitate));
+            OnPropertyChanged(nameof(Pret));
+            OnPropertyChanged(nameof(Subtotal));
+        }
     }
 }
+
